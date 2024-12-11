@@ -15,7 +15,8 @@ body {
 }
 
 .calculator {
-    width: 25%;
+    width: 100%;
+    max-width: 400px;
     background-color: #413543;
     color: #F0EB8D;
     padding: 20px;
@@ -125,4 +126,19 @@ input:focus {
     width: 0;
     height: 100%;
     background: #495057;
+}
+
+@media (max-width: 600px) {
+    .calculator{
+        padding: 10px;
+        max-width: 300px;
+    }
+    .input {
+        height: 40px;
+        font-size: 18px;
+    }
+    .buttons{
+        height: 40px;
+        font-size: 15px;
+    }
 }

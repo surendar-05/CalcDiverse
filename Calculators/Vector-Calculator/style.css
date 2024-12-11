@@ -1,68 +1,135 @@
 body {
-	background: #011c28;
-	text-align: center;
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	font-family: 'Raleway', sans-serif;
+    background: #011c28;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 button {
-	background: #cde7f3;
-	border: 0;
-	color: #638998;
-	font-size: 18px;
-	font-weight: bold;
-	padding: 10px;
-	width: 120px;
-	border-radius: 5px;
+    background: #cde7f3;
+    border: 0;
+    color: #638998;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
 button:active {
-	background: #2C3E50;
+    background: #2C3E50;
 }
 
 h1 {
-	font-size: 70px;
+    font-size: 60px;
+    color: beige;
+    margin-top: 20px;
 }
 
 input {
-	border: 0;
-	border-radius: 5px;
-	font-size: 16px;
-	margin: 10px;
-	padding: 10px;
-}
-
-.calc {
-	background: #1d0a4c;
-	color: #c474a8;
-	border: #011c28;
-	text-shadow: 0 7px 0 #011c28;
-	padding: 10px;
-	position: relative;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
 }
 
 #results {
-	color: #C5EBFE;
-	font-size: 24px;
-	margin: 10px;
-	line-height: 25px;
+    color: #C5EBFE;
+    font-size: 24px;
+    margin: 10px;
+    line-height: 25px;
 }
 
-/*#results:hover{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-	transform: scale(1.2);
-}*/
 .vect {
-	display: block;
-	font-size: 24px;
-	color: #C5EBFE;
-	margin: 10px;
+    display: block;
+    font-size: 24px;
+    color: #C5EBFE;
+    margin: 15px;
 }
 
 .vect>p {
-	font-weight: bold;
+    font-weight: bold;
+}
+
+.operation {
+    margin: 35px 0;
+}
+
+.operation label {
+    color: #C5EBFE;
+    font-size: 24px;
+}
+
+.operation select {
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.vector-group {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.input-group label {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .vect {
+        font-size: 18px;
+    }
+
+    .operation label {
+        font-size: 18px;
+    }
+
+    .operation select {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px;
+        width: 100px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    #results {
+        font-size: 20px;
+    }
+
+    .vector-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        margin: 10px 0;
+    }
 }

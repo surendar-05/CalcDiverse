@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(47, 117, 178);
+    background: linear-gradient(90deg, rgba(47, 117, 178, 1) 21%, rgba(166, 233, 234, 1) 100%);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+}
+
+#main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #ffffffc3;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 2px 32px rgba(15, 91, 206, 0.1);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+#input-section,
+#output-section {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+#input-section {
+    flex: 1;
+    min-width: 40%;
+}
+
+#output-section {
+    flex: 1;
+    min-width: 60%;
+}
+
+#input-section h2,
+#output-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#arrival-time,
+#burst-time,
+#time-quantum {
+    width: 95%;
+}
+
+form fieldset {
+    border: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+form button {
+    background-color: #2684ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+form button:hover {
+    background-color: #005bff;
+}
+
+form button:focus {
+    outline: none;
+}
+
+form button span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms ease-out;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+#output-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#output-table th,
+#output-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 800px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-section,
+    #output-section {
+        width: 100%;
+        min-width: unset;
+    }
+}

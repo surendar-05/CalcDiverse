@@ -1,6 +1,6 @@
 name: Style Changing Request 👯‍♂️
 description: Suggest a style design
-title: '[Style]'
+title: "[Style] <write a small description here"
 body:
   - type: markdown
     attributes:
@@ -11,7 +11,7 @@ body:
     attributes:
       label: What's the style idea?
       placeholder: Add descriptions
-      value: 'We need to improve'
+      value: "We need to improve"
 
   - type: checkboxes
     id: no-duplicate-issues
@@ -24,17 +24,8 @@ body:
         - label: "I follow [Contributing Guidelines](https://github.com/Rakesh9100/CalcDiverse/blob/main/.github/CONTRIBUTING_GUIDELINES.md) of this project."
           required: true
 
-        - label: "I am a GSSOC'24 contributor."
+        - label: "I am a KWOC'24 contributor."
           required: true
-          
-        - label: "I am a IWOC'24 contributor."
-          required: false
-
-        - label: "I am a JWOC'24 contributor."
-          required: false
-
-        - label: "I am a SWOC'24 contributor."
-          required: false
   
   - type: checkboxes
     id: terms
